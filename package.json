@@ -1,0 +1,82 @@
+{
+  "name": "generator-vapor",
+  "version": "0.0.0",
+  "description": "Generates new project templates for APIs, websites, commands, and more using Vapor.",
+  "homepage": "https://vapor.codes",
+  "author": {
+    "name": "tanner0101",
+    "email": "me@tanner.xyz",
+    "url": "https://tanner.xyz"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "vapor",
+    "server-side-swift",
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "yeoman-test": "^1.7.0",
+    "yeoman-assert": "^3.1.0",
+    "eslint": "^5.4.0",
+    "prettier": "^1.11.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-config-xo": "^0.24.2",
+    "jest": "^23.5.0"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "dependencies": {
+    "yeoman-generator": "^2.0.1",
+    "chalk": "^2.1.0",
+    "yosay": "^2.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "xo",
+      "prettier"
+    ],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "printWidth": 90
+        }
+      ]
+    },
+    "plugins": [
+      "prettier"
+    ]
+  },
+  "scripts": {
+    "pretest": "eslint .",
+    "precommit": "lint-staged",
+    "test": "jest"
+  },
+  "repository": "vapor/generator-vapor",
+  "license": "MIT"
+}

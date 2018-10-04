@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "tanner0101",
+      "authorEmail": "me@tanner.xyz",
+      "authorUrl": "https://tanner.xyz"
+    }
+  }
+}
