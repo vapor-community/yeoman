@@ -20,7 +20,7 @@ module.exports = class extends Generator {
       {
         type: 'confirm',
         name: 'fluent',
-        message: 'Would you to include Fluent?',
+        message: 'Would you like to include Fluent?',
         default: false
       },
       {
