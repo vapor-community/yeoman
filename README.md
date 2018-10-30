@@ -1,5 +1,7 @@
 # Yo Vapor
 
+> Generates new project templates for APIs, websites, commands, and more using Vapor.
+
 <a href="https://docs.vapor.codes/3.0/validation/getting-started/">
     <img src="http://img.shields.io/badge/read_the-docs-2196f3.svg" alt="Documentation">
 </a>
@@ -15,9 +17,6 @@
 <a href="https://swift.org">
     <img src="http://img.shields.io/badge/swift-4.1-brightgreen.svg" alt="Swift 4.1">
 </a>
-<br>
-
-> Generates new project templates for APIs, websites, commands, and more using Vapor.
 
 ## Installation
 
